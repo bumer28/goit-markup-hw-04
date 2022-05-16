@@ -261,6 +261,9 @@ a {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--hero-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ======================особености======================== */
 .features-list {
@@ -294,14 +297,14 @@ a {
   color: var(--text-color);
 }
 .container-icon {
-    width: 270px;
-    height: 120px;
-    background: var( --background-team );
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: var( --background-team );
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /* ========================Чем мы  занимаемся===================== */
@@ -351,14 +354,14 @@ a {
     
 }
 .team-soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
     
-    background-color: #FFFFFF;   
+  background-color: #FFFFFF;   
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -439,6 +442,16 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--titl-text-color);
+}
+.project-link {
+  text-decoration:none;
+  display: block;
+}
+
+.project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .member-metier {
