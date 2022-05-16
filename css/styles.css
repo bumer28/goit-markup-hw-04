@@ -14,6 +14,7 @@
   --secondary-logo-footer-color: #ffffff;
   --hero-text-color: #ffffff;
   --accent-color: #188ce8;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -153,11 +154,24 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+}
+
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.contact-icon:hover,
+.contact-icon:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* ============банер/фильтер============= */
 .hero {
@@ -356,7 +370,7 @@ a {
 }
 
 .team-soc-icon {
-    fill: #AFB1B8;
+    fill: var(--icon-color);
 }
 
 
@@ -446,6 +460,45 @@ a {
   color: var(--text-color);
 }
 
+/* =======================Постоянные клиенты================ */
+.section-title {
+    font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titl-text-color);
+  margin-bottom: 50px;
+}
+
+
+.client-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-color);
+}
+
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 /* =======================Подвал=========================== */
 .footer {
   background-color: var(--background-footer);
@@ -485,3 +538,50 @@ a {
 .map {
   color: var(--footer-text-color);
 }
+
+.address-container{
+    margin-right: 70px;
+}
+
+.container.address{
+    align-items: baseline;
+    display: flex;
+}
+
+
+
+.join-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--footer-text-color);
+
+    margin-bottom: 20px;
+}
+
+.join-soc-list{
+    display: flex;
+}
+
+.join-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--footer-text-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.join-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-soc-link:hover,
+.join-soc-link:focus {
+    background-color: var(--accent-color);
+}
+
